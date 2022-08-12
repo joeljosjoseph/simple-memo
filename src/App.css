@@ -3,6 +3,60 @@ root {
 }
 
 .container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url("./images/background.jpg");
+  height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  
+
+}
+.container-form {
+  display: flex;
+  background-color: rgba(252, 186, 3, .5  );
+  flex-direction: column;
+  min-width: 250px;
+  margin-left: 50px;
+  padding: 10px;
+  max-height: 300px;
+  border-radius: 5px;
+  transition:all ease-in-out 500ms;
+}
+
+.container-form:hover {
+  box-shadow: 0 0 5px 5px  #fcba03;
+  background-color: rgba(252, 186, 3, .75);
+  transform: scale(1.05);
+}
+
+.form-input {
+  all: unset;
+  border-bottom: 1px  solid black;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.container-form textarea {
+  all: unset;
+  min-height: 160px;
+  overflow: hidden;
+}
+.button-save, .button-delete {
+  all: unset;
+}
+
+.button-save {
+  min-width: 95%;
+  --bgcolor : rgba(252, 255, 200, .5);
+  border: 2px solid var(--bgcolor);
+  padding-bottom: 0;
+  text-align: center;
+  color: var(--bgcolor);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: all ease-in-out 300ms;
+}
+
+.button-save:hover {
+  --bgcolor: rgba(252, 255, 200, .5);
+    border: 2px solid var(--bgcolor);
+    background-color: var(--bgcolor);
+    color: #fcba03;
 }
